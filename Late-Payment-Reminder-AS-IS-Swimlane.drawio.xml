@@ -1,0 +1,235 @@
+<mxfile host="app.diagrams.net" modified="2025-10-22T00:00:00.000Z" agent="Cursor AI" version="21.0.0">
+  <diagram name="Late Payment Reminder AS-IS Process" id="late-payment-reminder-as-is">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- Swimlane: Tenant / Occupant -->
+        <mxCell id="lane_tenant_as_is" value="Tenant / Occupant" style="swimlane;html=1;startSize=30;horizontal=0;swimlaneFillColor=#E1F5FE;fillColor=#B3E5FC;strokeColor=#01579B;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="40" y="40" width="2800" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="tenant_receive_as_is" value="Receive Invoice&#xa;(Paper/Email)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3E0;strokeColor=#E65100;fontStyle=0;fontSize=10;align=center;" parent="lane_tenant_as_is" vertex="1">
+          <mxGeometry x="40" y="30" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="tenant_pay_as_is" value="Make Payment&#xa;(Cheque/Bank Transfer)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#1B5E20;fontStyle=0;fontSize=10;align=center;" parent="lane_tenant_as_is" vertex="1">
+          <mxGeometry x="200" y="10" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="tenant_dispute_as_is" value="Call/Email&#xa;Dispute" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FCE4EC;strokeColor=#880E4F;fontStyle=0;fontSize=10;align=center;" parent="lane_tenant_as_is" vertex="1">
+          <mxGeometry x="200" y="75" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="tenant_ignore_as_is" value="Ignore&#xa;Reminders" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFCDD2;strokeColor=#B71C1C;fontStyle=0;fontSize=10;align=center;" parent="lane_tenant_as_is" vertex="1">
+          <mxGeometry x="360" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Swimlane: AR Team (Manual Process) -->
+        <mxCell id="lane_ar_as_is" value="AR Team (Manual Process)" style="swimlane;html=1;startSize=30;horizontal=0;swimlaneFillColor=#FFEBEE;fillColor=#FFCDD2;strokeColor=#B71C1C;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="40" y="180" width="2800" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="ar_manual_check_as_is" value="Manual Check&#xa;Overdue List&#xa;(Excel Spreadsheet)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFCDD2;strokeColor=#B71C1C;fontStyle=0;fontSize=10;align=center;" parent="lane_ar_as_is" vertex="1">
+          <mxGeometry x="40" y="50" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ar_age_check_as_is" value="Check Aging&#xa;Manually&#xa;(Days Past Due)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFCDD2;strokeColor=#B71C1C;fontStyle=0;fontSize=10;align=center;" parent="lane_ar_as_is" vertex="1">
+          <mxGeometry x="200" y="50" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ar_manual_reminder_as_is" value="Manual Email/Phone&#xa;Reminder&#xa;(No Template)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFCDD2;strokeColor=#B71C1C;fontStyle=0;fontSize=10;align=center;" parent="lane_ar_as_is" vertex="1">
+          <mxGeometry x="360" y="50" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ar_payment_check_as_is" value="Check Payment&#xa;Manually&#xa;(Bank Statement)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFCDD2;strokeColor=#B71C1C;fontStyle=0;fontSize=10;align=center;" parent="lane_ar_as_is" vertex="1">
+          <mxGeometry x="520" y="50" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ar_manual_allocate_as_is" value="Manual Allocation&#xa;in Excel&#xa;(Error Prone)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFCDD2;strokeColor=#B71C1C;fontStyle=0;fontSize=10;align=center;" parent="lane_ar_as_is" vertex="1">
+          <mxGeometry x="680" y="50" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ar_dispute_handle_as_is" value="Handle Dispute&#xa;via Email&#xa;(No Tracking)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFCDD2;strokeColor=#B71C1C;fontStyle=0;fontSize=10;align=center;" parent="lane_ar_as_is" vertex="1">
+          <mxGeometry x="840" y="50" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ar_manual_fee_as_is" value="Manual Late Fee&#xa;Calculation&#xa;(Excel Formula)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFCDD2;strokeColor=#B71C1C;fontStyle=0;fontSize=10;align=center;" parent="lane_ar_as_is" vertex="1">
+          <mxGeometry x="1000" y="50" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ar_escalate_manual_as_is" value="Manual Escalation&#xa;to Manager&#xa;(Email/Phone)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFCDD2;strokeColor=#B71C1C;fontStyle=0;fontSize=10;align=center;" parent="lane_ar_as_is" vertex="1">
+          <mxGeometry x="1160" y="50" width="120" height="80" as="geometry" />
+        </mxCell>
+        
+        <!-- Swimlane: Property Manager (Manual) -->
+        <mxCell id="lane_pm_as_is" value="Property Manager (Manual Process)" style="swimlane;html=1;startSize=30;horizontal=0;swimlaneFillColor=#FCE4EC;fillColor=#F8BBD0;strokeColor=#880E4F;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="40" y="380" width="2800" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="pm_receive_dispute_as_is" value="Receive Dispute&#xa;via Email/Phone&#xa;(No System)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8BBD0;strokeColor=#880E4F;fontStyle=0;fontSize=10;align=center;" parent="lane_pm_as_is" vertex="1">
+          <mxGeometry x="840" y="40" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="pm_manual_investigate_as_is" value="Manual Investigation&#xa;(Check Files/Records)&#xa;(No SLA)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8BBD0;strokeColor=#880E4F;fontStyle=0;fontSize=10;align=center;" parent="lane_pm_as_is" vertex="1">
+          <mxGeometry x="1000" y="40" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="pm_manual_decision_as_is" value="Manual Decision&#xa;(Valid/Invalid)&#xa;(No Audit Trail)" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF9C4;strokeColor=#F57F17;fontStyle=1;fontSize=9;" parent="lane_pm_as_is" vertex="1">
+          <mxGeometry x="1160" y="45" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pm_manual_adjust_as_is" value="Manual Adjustment&#xa;(Excel/Paper)&#xa;(No Approval)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8BBD0;strokeColor=#880E4F;fontStyle=0;fontSize=10;align=center;" parent="lane_pm_as_is" vertex="1">
+          <mxGeometry x="1320" y="15" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="pm_manual_reject_as_is" value="Manual Rejection&#xa;(Email Response)&#xa;(No Tracking)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8BBD0;strokeColor=#880E4F;fontStyle=0;fontSize=10;align=center;" parent="lane_pm_as_is" vertex="1">
+          <mxGeometry x="1320" y="80" width="120" height="50" as="geometry" />
+        </mxCell>
+        
+        <!-- Swimlane: Finance Manager (Manual) -->
+        <mxCell id="lane_finance_as_is" value="Finance Manager (Manual Process)" style="swimlane;html=1;startSize=30;horizontal=0;swimlaneFillColor=#FFF3E0;fillColor=#FFE0B2;strokeColor=#E65100;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="40" y="540" width="2800" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="finance_manual_review_as_is" value="Manual Review&#xa;of Aged Cases&#xa;(Excel Reports)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE0B2;strokeColor=#E65100;fontStyle=0;fontSize=10;align=center;" parent="lane_finance_as_is" vertex="1">
+          <mxGeometry x="1160" y="40" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="finance_manual_approve_as_is" value="Manual Approval&#xa;for Legal Action&#xa;(Email/Phone)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE0B2;strokeColor=#E65100;fontStyle=0;fontSize=10;align=center;" parent="lane_finance_as_is" vertex="1">
+          <mxGeometry x="1320" y="40" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="finance_manual_legal_as_is" value="Manual Legal Referral&#xa;(Compile Documents)&#xa;(No Case File)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE0B2;strokeColor=#E65100;fontStyle=0;fontSize=10;align=center;" parent="lane_finance_as_is" vertex="1">
+          <mxGeometry x="1480" y="40" width="120" height="70" as="geometry" />
+        </mxCell>
+        
+        <!-- Swimlane: External Systems (Disconnected) -->
+        <mxCell id="lane_external_as_is" value="External Systems (Disconnected)" style="swimlane;html=1;startSize=30;horizontal=0;swimlaneFillColor=#F3E5F5;fillColor=#E1BEE7;strokeColor=#4A148C;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="40" y="700" width="2800" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="external_dataswift_as_is" value="Legacy Dataswift&#xa;(Limited Functionality)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1BEE7;strokeColor=#4A148C;fontStyle=0;fontSize=10;align=center;" parent="lane_external_as_is" vertex="1">
+          <mxGeometry x="40" y="30" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="external_excel_as_is" value="Excel Spreadsheets&#xa;(Manual Tracking)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1BEE7;strokeColor=#4A148C;fontStyle=0;fontSize=10;align=center;" parent="lane_external_as_is" vertex="1">
+          <mxGeometry x="200" y="30" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="external_email_as_is" value="Email System&#xa;(No Integration)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1BEE7;strokeColor=#4A148C;fontStyle=0;fontSize=10;align=center;" parent="lane_external_as_is" vertex="1">
+          <mxGeometry x="360" y="30" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="external_bank_as_is" value="Bank Statements&#xa;(Manual Download)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1BEE7;strokeColor=#4A148C;fontStyle=0;fontSize=10;align=center;" parent="lane_external_as_is" vertex="1">
+          <mxGeometry x="520" y="30" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="external_legal_as_is" value="Legal Counsel&#xa;(Manual Handoff)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1BEE7;strokeColor=#4A148C;fontStyle=0;fontSize=10;align=center;" parent="lane_external_as_is" vertex="1">
+          <mxGeometry x="1480" y="30" width="120" height="80" as="geometry" />
+        </mxCell>
+        
+        <!-- Connectors for AS-IS Flow -->
+        <mxCell id="edge_invoice_pay_as_is" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;entryX=0;entryY=0.5;" parent="1" source="tenant_receive_as_is" target="tenant_pay_as_is" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_invoice_dispute_as_is" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;entryX=0;entryY=0.5;" parent="1" source="tenant_receive_as_is" target="tenant_dispute_as_is" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_invoice_ignore_as_is" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" parent="1" source="tenant_receive_as_is" target="tenant_ignore_as_is" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="200" y="110" />
+              <mxPoint x="200" y="110" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="edge_ar_check_age_as_is" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" parent="1" source="ar_manual_check_as_is" target="ar_age_check_as_is" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_age_reminder_as_is" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" parent="1" source="ar_age_check_as_is" target="ar_manual_reminder_as_is" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_reminder_payment_as_is" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" parent="1" source="ar_manual_reminder_as_is" target="ar_payment_check_as_is" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_payment_allocate_as_is" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" parent="1" source="ar_payment_check_as_is" target="ar_manual_allocate_as_is" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_allocate_dispute_as_is" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" parent="1" source="ar_manual_allocate_as_is" target="ar_dispute_handle_as_is" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_dispute_fee_as_is" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" parent="1" source="ar_dispute_handle_as_is" target="ar_manual_fee_as_is" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_fee_escalate_as_is" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" parent="1" source="ar_manual_fee_as_is" target="ar_escalate_manual_as_is" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="edge_dispute_pm_as_is" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" parent="1" source="ar_dispute_handle_as_is" target="pm_receive_dispute_as_is" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_pm_investigate_as_is" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" parent="1" source="pm_receive_dispute_as_is" target="pm_manual_investigate_as_is" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_investigate_decision_as_is" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" parent="1" source="pm_manual_investigate_as_is" target="pm_manual_decision_as_is" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_decision_adjust_as_is" value="Valid" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;entryX=0;entryY=0.5;fontSize=10;fontStyle=1;" parent="1" source="pm_manual_decision_as_is" target="pm_manual_adjust_as_is" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_decision_reject_as_is" value="Invalid" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;entryX=0;entryY=0.5;fontSize=10;fontStyle=1;" parent="1" source="pm_manual_decision_as_is" target="pm_manual_reject_as_is" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="edge_escalate_finance_as_is" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" parent="1" source="ar_escalate_manual_as_is" target="finance_manual_review_as_is" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_finance_approve_as_is" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" parent="1" source="finance_manual_review_as_is" target="finance_manual_approve_as_is" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_approve_legal_as_is" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" parent="1" source="finance_manual_approve_as_is" target="finance_manual_legal_as_is" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_legal_external_as_is" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" parent="1" source="finance_manual_legal_as_is" target="external_legal_as_is" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- External System Connections -->
+        <mxCell id="edge_dataswift_excel_as_is" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;dashed=1;dashPattern=3 3;" parent="1" source="external_dataswift_as_is" target="external_excel_as_is" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_excel_email_as_is" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;dashed=1;dashPattern=3 3;" parent="1" source="external_excel_as_is" target="external_email_as_is" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_email_bank_as_is" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;dashed=1;dashPattern=3 3;" parent="1" source="external_email_as_is" target="external_bank_as_is" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Pain Points Annotations -->
+        <mxCell id="pain_point_1" value="❌ Manual Excel tracking&#xa;❌ No automation&#xa;❌ Error prone" style="text;html=1;strokeColor=#B71C1C;fillColor=#FFCDD2;align=left;verticalAlign=top;whiteSpace=wrap;rounded=1;fontSize=9;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="200" y="250" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pain_point_2" value="❌ No templates&#xa;❌ Inconsistent messaging&#xa;❌ No tracking" style="text;html=1;strokeColor=#B71C1C;fillColor=#FFCDD2;align=left;verticalAlign=top;whiteSpace=wrap;rounded=1;fontSize=9;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="360" y="250" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pain_point_3" value="❌ Manual bank checking&#xa;❌ No real-time sync&#xa;❌ Allocation errors" style="text;html=1;strokeColor=#B71C1C;fillColor=#FFCDD2;align=left;verticalAlign=top;whiteSpace=wrap;rounded=1;fontSize=9;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="520" y="250" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pain_point_4" value="❌ Email-based disputes&#xa;❌ No SLA tracking&#xa;❌ Lost in inbox" style="text;html=1;strokeColor=#B71C1C;fillColor=#FFCDD2;align=left;verticalAlign=top;whiteSpace=wrap;rounded=1;fontSize=9;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="840" y="450" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pain_point_5" value="❌ Manual document compilation&#xa;❌ No case files&#xa;❌ Time consuming" style="text;html=1;strokeColor=#B71C1C;fillColor=#FFCDD2;align=left;verticalAlign=top;whiteSpace=wrap;rounded=1;fontSize=9;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="1480" y="610" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Legend -->
+        <mxCell id="legend_title_as_is" value="AS-IS PROCESS PAIN POINTS" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="40" y="870" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="legend_manual" value="Manual Process" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFCDD2;strokeColor=#B71C1C;fontSize=9;" parent="1" vertex="1">
+          <mxGeometry x="40" y="900" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="legend_disconnected" value="Disconnected System" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1BEE7;strokeColor=#4A148C;fontSize=9;" parent="1" vertex="1">
+          <mxGeometry x="160" y="900" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="legend_decision" value="Manual Decision" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF9C4;strokeColor=#F57F17;fontSize=9;" parent="1" vertex="1">
+          <mxGeometry x="300" y="900" width="100" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Key Issues Summary -->
+        <mxCell id="issues_summary" value="&lt;b&gt;KEY AS-IS ISSUES:&lt;/b&gt;&lt;br&gt;• 80% manual processes (Excel, email, phone)&lt;br&gt;• No automation or scheduling&lt;br&gt;• Disconnected systems (Dataswift, Excel, Email)&lt;br&gt;• No audit trail or compliance tracking&lt;br&gt;• Inconsistent communication templates&lt;br&gt;• Manual payment allocation (error prone)&lt;br&gt;• No SLA tracking for disputes&lt;br&gt;• Manual legal document compilation&lt;br&gt;• No real-time payment monitoring&lt;br&gt;• Limited reporting and analytics" style="text;html=1;strokeColor=#B71C1C;fillColor=#FFCDD2;align=left;verticalAlign=top;whiteSpace=wrap;rounded=1;fontSize=10;spacing=4;" parent="1" vertex="1">
+          <mxGeometry x="450" y="870" width="300" height="200" as="geometry" />
+        </mxCell>
+        
+        <!-- Process Statistics -->
+        <mxCell id="process_stats" value="&lt;b&gt;AS-IS PROCESS STATISTICS:&lt;/b&gt;&lt;br&gt;• DSO: 30+ days (industry avg: 25 days)&lt;br&gt;• Manual allocation: 40% (error rate: 15%)&lt;br&gt;• Collection rate (90d): 88% (target: 95%)&lt;br&gt;• Dispute resolution: 12+ days (target: 5 days)&lt;br&gt;• AR efficiency: 500 units/FTE (target: 1,200)&lt;br&gt;• Bad debt: 0.8% (target: 0.5%)&lt;br&gt;• Communication bounce rate: 15%&lt;br&gt;• Payment plan success: 55%&lt;br&gt;• Legal referral prep time: 2-3 days&lt;br&gt;• Audit trail completeness: 60%" style="text;html=1;strokeColor=#E65100;fillColor=#FFE0B2;align=left;verticalAlign=top;whiteSpace=wrap;rounded=1;fontSize=10;spacing=4;" parent="1" vertex="1">
+          <mxGeometry x="780" y="870" width="300" height="200" as="geometry" />
+        </mxCell>
+        
+        <!-- Improvement Opportunities -->
+        <mxCell id="improvement_ops" value="&lt;b&gt;IMPROVEMENT OPPORTUNITIES:&lt;/b&gt;&lt;br&gt;• Automate dunning ladder (D+3 to D+60+)&lt;br&gt;• Real-time payment integration (FPS, banks)&lt;br&gt;• Standardized bilingual templates&lt;br&gt;• Automated dispute tracking with SLA&lt;br&gt;• Integrated case management system&lt;br&gt;• Auto-allocation with 95%+ accuracy&lt;br&gt;• Comprehensive audit trail&lt;br&gt;• Real-time dashboards and KPIs&lt;br&gt;• Automated legal case file compilation&lt;br&gt;• PDPO compliance framework" style="text;html=1;strokeColor=#1B5E20;fillColor=#C8E6C9;align=left;verticalAlign=top;whiteSpace=wrap;rounded=1;fontSize=10;spacing=4;" parent="1" vertex="1">
+          <mxGeometry x="1110" y="870" width="300" height="200" as="geometry" />
+        </mxCell>
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

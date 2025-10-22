@@ -1,0 +1,334 @@
+<mxfile host="app.diagrams.net" modified="2025-10-22T00:00:00.000Z" agent="Cursor AI" version="21.0.0">
+  <diagram name="Late Payment Reminder To-Be Process" id="late-payment-reminder">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- Swimlane: Tenant / Occupant -->
+        <mxCell id="lane_tenant" value="Tenant / Occupant" style="swimlane;html=1;startSize=30;horizontal=0;swimlaneFillColor=#E1F5FE;fillColor=#B3E5FC;strokeColor=#01579B;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="40" y="40" width="2800" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="tenant_receive" value="Receive Payment&#xa;Reminder Notice&#xa;(Email/SMS/Letter)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3E0;strokeColor=#E65100;fontStyle=0;fontSize=10;align=center;" parent="lane_tenant" vertex="1">
+          <mxGeometry x="610" y="30" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="tenant_decision" value="Action?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF9C4;strokeColor=#F57F17;fontStyle=1;fontSize=10;" parent="lane_tenant" vertex="1">
+          <mxGeometry x="790" y="35" width="100" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="tenant_pay" value="Make Payment&#xa;(FPS/Autopay/&#xa;Bank/Cheque/Card)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#1B5E20;fontStyle=0;fontSize=10;align=center;" parent="lane_tenant" vertex="1">
+          <mxGeometry x="950" y="10" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="tenant_dispute" value="Raise Dispute&#xa;or Query" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FCE4EC;strokeColor=#880E4F;fontStyle=0;fontSize=10;align=center;" parent="lane_tenant" vertex="1">
+          <mxGeometry x="950" y="75" width="120" height="50" as="geometry" />
+        </mxCell>
+        
+        <!-- Swimlane: PMS - Billing & Dunning Engine -->
+        <mxCell id="lane_pms" value="PMS - Billing &amp; Dunning Engine" style="swimlane;html=1;startSize=30;horizontal=0;swimlaneFillColor=#F3E5F5;fillColor=#E1BEE7;strokeColor=#4A148C;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="40" y="180" width="2800" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="pms_start" value="START&#xa;(Daily Schedule)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#C8E6C9;strokeColor=#1B5E20;fontStyle=1;fontSize=10;" parent="lane_pms" vertex="1">
+          <mxGeometry x="40" y="55" width="100" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="pms_identify" value="Identify Overdue&#xa;Invoices&#xa;(aging analysis)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#BBDEFB;strokeColor=#0D47A1;fontStyle=0;fontSize=10;align=center;" parent="lane_pms" vertex="1">
+          <mxGeometry x="190" y="50" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="pms_exclude" value="Account&#xa;Excluded?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF9C4;strokeColor=#F57F17;fontStyle=1;fontSize=9;" parent="lane_pms" vertex="1">
+          <mxGeometry x="360" y="55" width="110" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="pms_compute" value="Compute Dunning&#xa;Level &amp; Days&#xa;Past Due" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#BBDEFB;strokeColor=#0D47A1;fontStyle=0;fontSize=10;align=center;" parent="lane_pms" vertex="1">
+          <mxGeometry x="510" y="50" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="pms_fee_check" value="Crossed&#xa;Fee Threshold?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF9C4;strokeColor=#F57F17;fontStyle=1;fontSize=9;" parent="lane_pms" vertex="1">
+          <mxGeometry x="680" y="55" width="110" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="pms_apply_fee" value="Apply Late Fee&#xa;/ Interest Charge" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFCCBC;strokeColor=#BF360C;fontStyle=0;fontSize=10;align=center;" parent="lane_pms" vertex="1">
+          <mxGeometry x="830" y="10" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="pms_create_case" value="Create Dunning&#xa;Action + Case" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#BBDEFB;strokeColor=#0D47A1;fontStyle=0;fontSize=10;align=center;" parent="lane_pms" vertex="1">
+          <mxGeometry x="1000" y="50" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="pms_payment_rcv" value="Payment&#xa;Received?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF9C4;strokeColor=#F57F17;fontStyle=1;fontSize=9;" parent="lane_pms" vertex="1">
+          <mxGeometry x="1660" y="55" width="110" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="pms_allocate" value="Auto-Allocate&#xa;Payment &amp;&#xa;Clear Case" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C8E6C9;strokeColor=#1B5E20;fontStyle=0;fontSize=10;align=center;" parent="lane_pms" vertex="1">
+          <mxGeometry x="1820" y="10" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pms_partial_check" value="Partial&#xa;Payment?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF9C4;strokeColor=#F57F17;fontStyle=1;fontSize=9;" parent="lane_pms" vertex="1">
+          <mxGeometry x="1990" y="55" width="110" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="pms_log" value="Log Transaction&#xa;&amp; Update&#xa;Audit Trail" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D1C4E9;strokeColor=#4A148C;fontStyle=0;fontSize=10;align=center;" parent="lane_pms" vertex="1">
+          <mxGeometry x="2580" y="50" width="120" height="80" as="geometry" />
+        </mxCell>
+        
+        <!-- Swimlane: Communications Service -->
+        <mxCell id="lane_comms" value="Communications Service (Email / SMS / Letter)" style="swimlane;html=1;startSize=30;horizontal=0;swimlaneFillColor=#FFF3E0;fillColor=#FFE0B2;strokeColor=#E65100;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="40" y="360" width="2800" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="comms_send" value="Send Reminder&#xa;Notice per Template&#xa;&amp; Language (EN/ZH)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3E0;strokeColor=#E65100;fontStyle=0;fontSize=10;align=center;" parent="lane_comms" vertex="1">
+          <mxGeometry x="1170" y="30" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="comms_bounce" value="Delivery&#xa;Failure?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF9C4;strokeColor=#F57F17;fontStyle=1;fontSize=10;" parent="lane_comms" vertex="1">
+          <mxGeometry x="1360" y="35" width="100" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="comms_call" value="Queue Outbound&#xa;Call Task" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFCCBC;strokeColor=#BF360C;fontStyle=0;fontSize=10;align=center;" parent="lane_comms" vertex="1">
+          <mxGeometry x="1510" y="10" width="120" height="50" as="geometry" />
+        </mxCell>
+        
+        <!-- Swimlane: AR / Collections -->
+        <mxCell id="lane_ar" value="AR / Collections Team" style="swimlane;html=1;startSize=30;horizontal=0;swimlaneFillColor=#E8F5E9;fillColor=#C8E6C9;strokeColor=#1B5E20;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="40" y="500" width="2800" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="ar_queue" value="Review Dunning&#xa;Queue &amp; Cases" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C8E6C9;strokeColor=#1B5E20;fontStyle=0;fontSize=10;align=center;" parent="lane_ar" vertex="1">
+          <mxGeometry x="1510" y="75" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ar_plan" value="Offer Payment Plan&#xa;&amp; Capture Terms" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B2DFDB;strokeColor=#00695C;fontStyle=0;fontSize=10;align=center;" parent="lane_ar" vertex="1">
+          <mxGeometry x="2150" y="10" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ar_dispute_flag" value="Mark as Dispute&#xa;&amp; Suspend&#xa;Dunning" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FCE4EC;strokeColor=#880E4F;fontStyle=0;fontSize=10;align=center;" parent="lane_ar" vertex="1">
+          <mxGeometry x="1140" y="100" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ar_monitor" value="Monitor Promises&#xa;&amp; Payment Plans" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C8E6C9;strokeColor=#1B5E20;fontStyle=0;fontSize=10;align=center;" parent="lane_ar" vertex="1">
+          <mxGeometry x="2320" y="10" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Swimlane: Property Manager -->
+        <mxCell id="lane_pm" value="Property Manager" style="swimlane;html=1;startSize=30;horizontal=0;swimlaneFillColor=#FCE4EC;fillColor=#F8BBD0;strokeColor=#880E4F;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="40" y="680" width="2800" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="pm_investigate" value="Investigate&#xa;Dispute / Query" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8BBD0;strokeColor=#880E4F;fontStyle=0;fontSize=10;align=center;" parent="lane_pm" vertex="1">
+          <mxGeometry x="1140" y="40" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="pm_valid" value="Dispute&#xa;Valid?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF9C4;strokeColor=#F57F17;fontStyle=1;fontSize=10;" parent="lane_pm" vertex="1">
+          <mxGeometry x="1310" y="45" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pm_adjust" value="Adjust Charge /&#xa;Issue Credit Note" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C8E6C9;strokeColor=#1B5E20;fontStyle=0;fontSize=10;align=center;" parent="lane_pm" vertex="1">
+          <mxGeometry x="1460" y="15" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="pm_reject" value="Reject Dispute&#xa;&amp; Resume&#xa;Dunning" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFCCBC;strokeColor=#BF360C;fontStyle=0;fontSize=10;align=center;" parent="lane_pm" vertex="1">
+          <mxGeometry x="1460" y="80" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Swimlane: Finance / Legal Escalation -->
+        <mxCell id="lane_legal" value="Finance / Legal Escalation" style="swimlane;html=1;startSize=30;horizontal=0;swimlaneFillColor=#FFEBEE;fillColor=#FFCDD2;strokeColor=#B71C1C;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="40" y="840" width="2800" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="legal_escalate" value="Escalation&#xa;Required?&#xa;(Age &gt; 45d or&#xa;Amt &gt; Threshold)" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF9C4;strokeColor=#F57F17;fontStyle=1;fontSize=9;" parent="lane_legal" vertex="1">
+          <mxGeometry x="2160" y="50" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="legal_final" value="Issue Final Notice&#xa;&amp; Service Hold&#xa;Request" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFCCBC;strokeColor=#BF360C;fontStyle=0;fontSize=10;align=center;" parent="lane_legal" vertex="1">
+          <mxGeometry x="2340" y="50" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="legal_check" value="Age &gt; 60d&#xa;or Amount&#xa;&gt; HKD X?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF9C4;strokeColor=#F57F17;fontStyle=1;fontSize=9;" parent="lane_legal" vertex="1">
+          <mxGeometry x="2510" y="55" width="110" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="legal_refer" value="Refer to Legal /&#xa;Debt Collection&#xa;Agency (DCA)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFCDD2;strokeColor=#B71C1C;fontStyle=1;fontSize=10;align=center;" parent="lane_legal" vertex="1">
+          <mxGeometry x="2670" y="10" width="120" height="70" as="geometry" />
+        </mxCell>
+        
+        <!-- Connectors -->
+        <mxCell id="edge_start_identify" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" parent="1" source="pms_start" target="pms_identify" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_identify_exclude" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" parent="1" source="pms_identify" target="pms_exclude" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_exclude_compute_no" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;fontSize=10;fontStyle=1;" parent="1" source="pms_exclude" target="pms_compute" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_exclude_log_yes" value="Yes&#xa;(Dispute, Plan,&#xa;Hold)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;entryX=0;entryY=0.5;fontSize=9;fontStyle=1;" parent="1" source="pms_exclude" target="pms_log" edge="1">
+          <mxGeometry x="-0.2" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="455" y="350" />
+              <mxPoint x="2550" y="350" />
+              <mxPoint x="2550" y="270" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_compute_fee" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" parent="1" source="pms_compute" target="pms_fee_check" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_fee_apply" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;entryX=0;entryY=0.5;fontSize=10;fontStyle=1;" parent="1" source="pms_fee_check" target="pms_apply_fee" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_fee_case_no" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;fontSize=10;fontStyle=1;" parent="1" source="pms_fee_check" target="pms_create_case" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="815" y="270" />
+              <mxPoint x="815" y="270" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_apply_case" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;entryX=0.5;entryY=0;" parent="1" source="pms_apply_fee" target="pms_create_case" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_case_comms" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;entryX=0;entryY=0.5;" parent="1" source="pms_create_case" target="comms_send" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_comms_tenant" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;entryX=0;entryY=0.5;dashed=1;dashPattern=3 3;" parent="1" source="comms_send" target="tenant_receive" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="640" y="430" />
+              <mxPoint x="640" y="110" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_comms_bounce" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" parent="1" source="comms_send" target="comms_bounce" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_bounce_call" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;entryX=0;entryY=0.5;fontSize=10;fontStyle=1;" parent="1" source="comms_bounce" target="comms_call" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_bounce_queue_no" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;entryX=0.5;entryY=0;fontSize=10;fontStyle=1;" parent="1" source="comms_bounce" target="ar_queue" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_call_queue" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;entryX=0.5;entryY=0;" parent="1" source="comms_call" target="ar_queue" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_tenant_decision" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" parent="1" source="tenant_receive" target="tenant_decision" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_decision_pay" value="Pay" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;entryX=0;entryY=0.5;fontSize=10;fontStyle=1;" parent="1" source="tenant_decision" target="tenant_pay" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_decision_dispute" value="Dispute" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;entryX=0;entryY=0.5;fontSize=10;fontStyle=1;" parent="1" source="tenant_decision" target="tenant_dispute" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_pay_pms" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;entryX=0.5;entryY=0;dashed=1;dashPattern=3 3;" parent="1" source="tenant_pay" target="pms_payment_rcv" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_dispute_ar" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;entryX=0;entryY=0.5;" parent="1" source="tenant_dispute" target="ar_dispute_flag" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_ar_dispute_pm" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" parent="1" source="ar_dispute_flag" target="pm_investigate" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_pm_valid" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" parent="1" source="pm_investigate" target="pm_valid" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_valid_adjust" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;entryX=0;entryY=0.5;fontSize=10;fontStyle=1;" parent="1" source="pm_valid" target="pm_adjust" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_valid_reject" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;entryX=0;entryY=0.5;fontSize=10;fontStyle=1;" parent="1" source="pm_valid" target="pm_reject" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_adjust_log" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.25;" parent="1" source="pm_adjust" target="pms_log" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2540" y="760" />
+              <mxPoint x="2540" y="260" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_reject_log" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" parent="1" source="pm_reject" target="pms_log" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2560" y="830" />
+              <mxPoint x="2560" y="270" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_payment_rcv" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" parent="1" source="pms_payment_rcv" target="pms_allocate" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_allocate_partial" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" parent="1" source="pms_allocate" target="pms_partial_check" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_partial_plan" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;entryX=0;entryY=0.5;fontSize=10;fontStyle=1;" parent="1" source="pms_partial_check" target="ar_plan" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2085" y="270" />
+              <mxPoint x="2085" y="540" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_partial_escalate" value="No (Full)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;fontSize=10;fontStyle=1;" parent="1" source="pms_partial_check" target="legal_escalate" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2130" y="270" />
+              <mxPoint x="2130" y="930" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_plan_monitor" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" parent="1" source="ar_plan" target="ar_monitor" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_monitor_log" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;entryX=0.5;entryY=1;" parent="1" source="ar_monitor" target="pms_log" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_escalate_no" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=1;fontSize=10;fontStyle=1;" parent="1" source="legal_escalate" target="pms_log" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2265" y="1030" />
+              <mxPoint x="2680" y="1030" />
+              <mxPoint x="2680" y="310" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_escalate_yes" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;fontSize=10;fontStyle=1;" parent="1" source="legal_escalate" target="legal_final" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_final_check" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" parent="1" source="legal_final" target="legal_check" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_check_refer" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;entryX=0;entryY=0.5;fontSize=10;fontStyle=1;" parent="1" source="legal_check" target="legal_refer" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_check_log_no" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;entryX=1;entryY=0.75;fontSize=10;fontStyle=1;" parent="1" source="legal_check" target="pms_log" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2605" y="1000" />
+              <mxPoint x="2730" y="1000" />
+              <mxPoint x="2730" y="290" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_refer_log" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;entryX=1;entryY=0.5;" parent="1" source="legal_refer" target="pms_log" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2810" y="885" />
+              <mxPoint x="2810" y="270" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_log_loop" value="Continue&#xa;Monitoring" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;entryX=1;entryY=0.5;fontSize=9;fontStyle=1;dashed=1;dashPattern=3 3;" parent="1" source="pms_log" target="pms_start" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2640" y="150" />
+              <mxPoint x="2840" y="150" />
+              <mxPoint x="2840" y="20" />
+              <mxPoint x="160" y="20" />
+              <mxPoint x="160" y="270" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Legend -->
+        <mxCell id="legend_title" value="LEGEND" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="40" y="1050" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="legend_task" value="Process / Task" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#BBDEFB;strokeColor=#0D47A1;fontSize=9;" parent="1" vertex="1">
+          <mxGeometry x="40" y="1080" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="legend_decision" value="Decision" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF9C4;strokeColor=#F57F17;fontSize=9;" parent="1" vertex="1">
+          <mxGeometry x="160" y="1080" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="legend_event" value="Event" style="ellipse;whiteSpace=wrap;html=1;fillColor=#C8E6C9;strokeColor=#1B5E20;fontSize=9;" parent="1" vertex="1">
+          <mxGeometry x="260" y="1080" width="80" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Annotations -->
+        <mxCell id="note_dunning_ladder" value="&lt;b&gt;Dunning Ladder:&lt;/b&gt;&lt;br&gt;D+3: Courtesy reminder&lt;br&gt;D+7: 1st overdue notice&lt;br&gt;D+14: 2nd overdue + late fee&lt;br&gt;D+21: Phone call warning&lt;br&gt;D+30: Service hold initiation&lt;br&gt;D+45: Demand letter&lt;br&gt;D+60: Legal/DCA referral" style="text;html=1;strokeColor=#B59A00;fillColor=#FFF9C4;align=left;verticalAlign=top;whiteSpace=wrap;rounded=1;fontSize=9;spacing=4;" parent="1" vertex="1">
+          <mxGeometry x="380" y="1050" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="note_compliance" value="&lt;b&gt;Compliance &amp; Controls:&lt;/b&gt;&lt;br&gt;• PDPO consent &amp; audit trail&lt;br&gt;• Role-based approvals&lt;br&gt;• Bilingual (EN/ZH) comms&lt;br&gt;• Immutable audit log&lt;br&gt;• SLA timers for disputes&lt;br&gt;• Auto-pause during dispute" style="text;html=1;strokeColor=#1B5E20;fillColor=#C8E6C9;align=left;verticalAlign=top;whiteSpace=wrap;rounded=1;fontSize=9;spacing=4;" parent="1" vertex="1">
+          <mxGeometry x="610" y="1050" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="note_kpi" value="&lt;b&gt;Key Performance Indicators:&lt;/b&gt;&lt;br&gt;• Collection rate by aging bucket&lt;br&gt;• Days Sales Outstanding (DSO)&lt;br&gt;• Promise-to-pay kept ratio&lt;br&gt;• Right-party contact rate&lt;br&gt;• Communication bounce rate&lt;br&gt;• Dispute cycle time&lt;br&gt;• Fee reversal rate" style="text;html=1;strokeColor=#0D47A1;fillColor=#BBDEFB;align=left;verticalAlign=top;whiteSpace=wrap;rounded=1;fontSize=9;spacing=4;" parent="1" vertex="1">
+          <mxGeometry x="840" y="1050" width="220" height="120" as="geometry" />
+        </mxCell>
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
+
