@@ -1,0 +1,340 @@
+<mxfile host="app.diagrams.net" modified="2025-10-23T00:00:00.000Z" agent="5.0" version="21.0.0" etag="drawio-version" type="device">
+  <diagram name="Project Team Structure" id="project-team-structure">
+    <mxGraphModel dx="1600" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1800" pageHeight="1400" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        
+        <!-- Title -->
+        <mxCell id="title" value="PMS Project Team Structure" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="20" width="500" height="40" as="geometry"/>
+        </mxCell>
+        
+        <!-- Executive Sponsors -->
+        <mxCell id="exec-sponsors-header" value="EXECUTIVE SPONSORS" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1A4D7C;strokeColor=#0D2A4A;strokeWidth=2;fontStyle=1;fontSize=13;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="600" y="80" width="600" height="35" as="geometry"/>
+        </mxCell>
+        <mxCell id="exec-raymond" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6F2FF;strokeColor=#4A90D9;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="600" y="115" width="300" height="85" as="geometry"/>
+        </mxCell>
+        <mxCell id="exec-raymond-name" value="&lt;b style=&quot;font-size: 13px;&quot;&gt;Raymond Lee&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="610" y="125" width="280" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="exec-raymond-title" value="&lt;i&gt;Chief Executive Officer&lt;br&gt;(Greater China)&lt;/i&gt;" style="text;html=1;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#555555;" vertex="1" parent="1">
+          <mxGeometry x="610" y="150" width="280" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="exec-joseph" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6F2FF;strokeColor=#4A90D9;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="900" y="115" width="300" height="85" as="geometry"/>
+        </mxCell>
+        <mxCell id="exec-joseph-name" value="&lt;b style=&quot;font-size: 13px;&quot;&gt;Joseph Leung&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="910" y="125" width="280" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="exec-joseph-title" value="&lt;i&gt;Chief Operating Officer&lt;br&gt;(HK &amp; Macau)&lt;/i&gt;" style="text;html=1;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#555555;" vertex="1" parent="1">
+          <mxGeometry x="910" y="150" width="280" height="40" as="geometry"/>
+        </mxCell>
+        
+        <!-- Connector from Executive down -->
+        <mxCell id="exec-connector" value="" style="endArrow=classic;html=1;strokeWidth=2;strokeColor=#4A90D9;exitX=0.5;exitY=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="900" y="200" as="sourcePoint"/>
+            <mxPoint x="900" y="240" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Governance Layer -->
+        <mxCell id="governance-header" value="GOVERNANCE &amp; STEERING" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#2C5F8D;strokeColor=#1A4D7C;strokeWidth=2;fontStyle=1;fontSize=13;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="100" y="240" width="1600" height="35" as="geometry"/>
+        </mxCell>
+        
+        <!-- Steering Committee -->
+        <mxCell id="steering-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F0F7FF;strokeColor=#4A90D9;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="100" y="275" width="700" height="180" as="geometry"/>
+        </mxCell>
+        <mxCell id="steering-title" value="&lt;b&gt;Steering Committee&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#5B9BD5;strokeColor=#2C5F8D;fontStyle=1;fontSize=12;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="100" y="275" width="700" height="30" as="geometry"/>
+        </mxCell>
+        
+        <!-- Steering Committee Members - Top Row -->
+        <mxCell id="steering-susanna" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B8D4E8;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="315" width="210" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="steering-susanna-text" value="&lt;b&gt;Susanna Poon&lt;/b&gt;&lt;br&gt;&lt;i style=&quot;font-size: 10px;&quot;&gt;Chief Financial Officer&lt;br&gt;(HK &amp; Macau)&lt;/i&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="120" y="315" width="210" height="60" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="steering-angela" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B8D4E8;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="345" y="315" width="210" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="steering-angela-text" value="&lt;b&gt;Angela Chiu&lt;/b&gt;&lt;br&gt;&lt;i style=&quot;font-size: 10px;&quot;&gt;Group Managing Director &amp;&lt;br&gt;Head of Property Services&lt;/i&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="345" y="315" width="210" height="60" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="steering-wilson" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B8D4E8;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="570" y="315" width="210" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="steering-wilson-text" value="&lt;b&gt;Wilson Lee&lt;/b&gt;&lt;br&gt;&lt;i style=&quot;font-size: 10px;&quot;&gt;Senior Director&lt;br&gt;Quality &amp; Support Services&lt;/i&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="570" y="315" width="210" height="60" as="geometry"/>
+        </mxCell>
+        
+        <!-- Steering Committee - Bottom Row (DMD) -->
+        <mxCell id="steering-dmd-gpml" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B8D4E8;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="385" width="330" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="steering-dmd-gpml-text" value="&lt;b&gt;DMD – GPML&lt;/b&gt;&lt;br&gt;&lt;i style=&quot;font-size: 10px;&quot;&gt;Samuel Dong, Matthew Ng&lt;/i&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="120" y="385" width="330" height="60" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="steering-dmd-spml" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B8D4E8;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="385" width="330" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="steering-dmd-spml-text" value="&lt;b&gt;DMD – SPML&lt;/b&gt;&lt;br&gt;&lt;i style=&quot;font-size: 10px;&quot;&gt;Catherine Wong&lt;/i&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="450" y="385" width="330" height="60" as="geometry"/>
+        </mxCell>
+        
+        <!-- Digital Transformation & Steering Chair -->
+        <mxCell id="dt-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F0F7FF;strokeColor=#4A90D9;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="820" y="275" width="450" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="dt-title" value="&lt;b&gt;Digital Transformation &amp; Steering Chair&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#5B9BD5;strokeColor=#2C5F8D;fontStyle=1;fontSize=12;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="820" y="275" width="300" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="dt-bianca" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B8D4E8;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="830" y="310" width="280" height="45" as="geometry"/>
+        </mxCell>
+        <mxCell id="dt-bianca-text" value="&lt;b&gt;Bianca Ho&lt;/b&gt;&lt;br&gt;&lt;i style=&quot;font-size: 10px;&quot;&gt;Head of Digital Transformation and PMO&lt;/i&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="830" y="310" width="280" height="45" as="geometry"/>
+        </mxCell>
+        
+        <!-- APAC -->
+        <mxCell id="apac-title" value="&lt;b&gt;APAC&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#5B9BD5;strokeColor=#2C5F8D;fontStyle=1;fontSize=12;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="275" width="150" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="apac-tyrus" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B8D4E8;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="310" width="280" height="45" as="geometry"/>
+        </mxCell>
+        <mxCell id="apac-tyrus-text" value="&lt;b&gt;Tyrus Yeung&lt;/b&gt;&lt;br&gt;&lt;i style=&quot;font-size: 10px;&quot;&gt;Head of Business Technology, MS, APAC&lt;/i&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="310" width="280" height="45" as="geometry"/>
+        </mxCell>
+        
+        <!-- APAC box extension -->
+        <mxCell id="apac-box-ext" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F0F7FF;strokeColor=#4A90D9;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1290" y="275" width="410" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="apac-box-bg" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F0F7FF;strokeColor=none;strokeWidth=0;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="275" width="280" height="90" as="geometry"/>
+        </mxCell>
+        
+        <!-- Re-add APAC elements on top -->
+        <mxCell id="apac-title-top" value="&lt;b&gt;APAC&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#5B9BD5;strokeColor=#2C5F8D;fontStyle=1;fontSize=12;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="275" width="580" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="apac-tyrus-top" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B8D4E8;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="1130" y="315" width="280" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="apac-tyrus-text-top" value="&lt;b&gt;Tyrus Yeung&lt;/b&gt;&lt;br&gt;&lt;i style=&quot;font-size: 10px;&quot;&gt;Head of Business Technology, MS, APAC&lt;/i&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1130" y="315" width="280" height="40" as="geometry"/>
+        </mxCell>
+        
+        <!-- Connector from DT to PMO -->
+        <mxCell id="dt-pmo-connector" value="" style="endArrow=classic;html=1;strokeWidth=2;strokeColor=#4A90D9;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1045" y="365" as="sourcePoint"/>
+            <mxPoint x="1045" y="495" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Project Management Office -->
+        <mxCell id="pmo-header" value="PROJECT MANAGEMENT OFFICE" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#2C5F8D;strokeColor=#1A4D7C;strokeWidth=2;fontStyle=1;fontSize=13;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="100" y="495" width="1600" height="35" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="pmo-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F0F7FF;strokeColor=#4A90D9;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="100" y="530" width="1600" height="100" as="geometry"/>
+        </mxCell>
+        
+        <!-- PMO Members -->
+        <mxCell id="pmo-may" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B8D4E8;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="550" width="300" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="pmo-may-text" value="&lt;b&gt;May Wong&lt;/b&gt;&lt;br&gt;&lt;i style=&quot;font-size: 10px;&quot;&gt;Finance Director&lt;/i&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="130" y="550" width="300" height="60" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="pmo-ian" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B8D4E8;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="550" width="300" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="pmo-ian-text" value="&lt;b&gt;Ian Yip&lt;/b&gt;&lt;br&gt;&lt;i style=&quot;font-size: 10px;&quot;&gt;Acting Senior Director (SPML)&lt;/i&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="450" y="550" width="300" height="60" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="pmo-ulric" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B8D4E8;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="770" y="550" width="300" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="pmo-ulric-text" value="&lt;b&gt;Ulric Yip&lt;/b&gt;&lt;br&gt;&lt;i style=&quot;font-size: 10px;&quot;&gt;Director (SPML)&lt;/i&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="770" y="550" width="300" height="60" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="pmo-jonathan" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B8D4E8;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="1090" y="550" width="300" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="pmo-jonathan-text" value="&lt;b&gt;Jonathan Ho&lt;/b&gt;&lt;br&gt;&lt;i style=&quot;font-size: 10px;&quot;&gt;Director, Administration &amp; Talent Development&lt;/i&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1090" y="550" width="300" height="60" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="pmo-kenneth" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B8D4E8;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="1410" y="550" width="260" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="pmo-kenneth-text" value="&lt;b&gt;Kenneth Li&lt;/b&gt;&lt;br&gt;&lt;i style=&quot;font-size: 10px;&quot;&gt;Project Manager&lt;/i&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1410" y="550" width="260" height="60" as="geometry"/>
+        </mxCell>
+        
+        <!-- Connector from PMO to Project Teams -->
+        <mxCell id="pmo-teams-connector" value="" style="endArrow=classic;html=1;strokeWidth=2;strokeColor=#4A90D9;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="900" y="630" as="sourcePoint"/>
+            <mxPoint x="900" y="680" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Project Teams Header -->
+        <mxCell id="teams-header" value="PROJECT TEAMS" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1A4D7C;strokeColor=#0D2A4A;strokeWidth=2;fontStyle=1;fontSize=13;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="100" y="680" width="1600" height="35" as="geometry"/>
+        </mxCell>
+        
+        <!-- Technical Team -->
+        <mxCell id="tech-header" value="TECHNICAL TEAM" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#5B9BD5;strokeColor=#2C5F8D;strokeWidth=2;fontStyle=1;fontSize=12;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="100" y="715" width="750" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="tech-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F0F7FF;strokeColor=#4A90D9;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="100" y="745" width="750" height="280" as="geometry"/>
+        </mxCell>
+        
+        <!-- DT & PMO Section -->
+        <mxCell id="tech-dt-header" value="&lt;b&gt;DT &amp; PMO&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D0E4F5;strokeColor=#4A90D9;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="120" y="760" width="700" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="tech-dt-donald" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B8D4E8;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="790" width="700" height="35" as="geometry"/>
+        </mxCell>
+        <mxCell id="tech-dt-donald-text" value="&lt;b&gt;Donald Yip&lt;/b&gt; - &lt;i&gt;Business Analyst (Starting 1 Dec 2025)&lt;/i&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="135" y="790" width="670" height="35" as="geometry"/>
+        </mxCell>
+        
+        <!-- HKIT Section -->
+        <mxCell id="tech-hkit-header" value="&lt;b&gt;HKIT&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D0E4F5;strokeColor=#4A90D9;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="120" y="840" width="700" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="tech-hkit-samuel" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B8D4E8;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="870" width="345" height="35" as="geometry"/>
+        </mxCell>
+        <mxCell id="tech-hkit-samuel-text" value="&lt;b&gt;Samuel Cheung&lt;/b&gt; - &lt;i&gt;Business Analyst, HKIT&lt;/i&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="135" y="870" width="320" height="35" as="geometry"/>
+        </mxCell>
+        <mxCell id="tech-hkit-mark" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B8D4E8;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="475" y="870" width="345" height="35" as="geometry"/>
+        </mxCell>
+        <mxCell id="tech-hkit-mark-text" value="&lt;b&gt;Mark Chen&lt;/b&gt; - &lt;i&gt;System Analyst, HKIT&lt;/i&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="490" y="870" width="320" height="35" as="geometry"/>
+        </mxCell>
+        
+        <!-- System Integration Section -->
+        <mxCell id="tech-si-header" value="&lt;b&gt;System Integration&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D0E4F5;strokeColor=#4A90D9;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="120" y="920" width="700" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="tech-si-linh" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B8D4E8;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="950" width="345" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="tech-si-linh-text" value="&lt;b&gt;Linh, Le Van&lt;/b&gt;&lt;br&gt;&lt;i&gt;Solution Development Head, Regional IT - Property Cube&lt;/i&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="135" y="950" width="320" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="tech-si-gilbert" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B8D4E8;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="475" y="950" width="345" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="tech-si-gilbert-text" value="&lt;b&gt;Gilbert Lam&lt;/b&gt;&lt;br&gt;&lt;i&gt;Development Manager, HKIT&lt;/i&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="490" y="950" width="320" height="50" as="geometry"/>
+        </mxCell>
+        
+        <!-- End User Team -->
+        <mxCell id="enduser-header" value="END USER TEAM" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#5B9BD5;strokeColor=#2C5F8D;strokeWidth=2;fontStyle=1;fontSize=12;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="870" y="715" width="830" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="enduser-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F0F7FF;strokeColor=#4A90D9;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="870" y="745" width="830" height="280" as="geometry"/>
+        </mxCell>
+        
+        <!-- Operations SPML -->
+        <mxCell id="eu-ops-spml-header" value="&lt;b&gt;Operations (SPML)&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D0E4F5;strokeColor=#4A90D9;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="890" y="760" width="150" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="eu-ops-spml-box" value="Karen Lai&lt;br&gt;Austina Chung&lt;br&gt;Zoey Lau&lt;br&gt;Icy Hung&lt;br&gt;Karen Wong&lt;br&gt;Patrick Chan" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B8D4E8;strokeWidth=1;align=left;fontSize=10;spacingLeft=10;verticalAlign=top;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="890" y="790" width="150" height="210" as="geometry"/>
+        </mxCell>
+        
+        <!-- Operations GPML -->
+        <mxCell id="eu-ops-gpml-header" value="&lt;b&gt;Operations (GPML)&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D0E4F5;strokeColor=#4A90D9;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1060" y="760" width="150" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="eu-ops-gpml-box" value="Andy Lau&lt;br&gt;Megan Wong" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B8D4E8;strokeWidth=1;align=left;fontSize=10;spacingLeft=10;verticalAlign=top;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="1060" y="790" width="150" height="60" as="geometry"/>
+        </mxCell>
+        
+        <!-- Finance SPML -->
+        <mxCell id="eu-fin-spml-header" value="&lt;b&gt;Finance (SPML)&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D0E4F5;strokeColor=#4A90D9;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1230" y="760" width="150" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="eu-fin-spml-box" value="Alvin Poon&lt;br&gt;Lawrence Wong&lt;br&gt;Stephen Lui" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B8D4E8;strokeWidth=1;align=left;fontSize=10;spacingLeft=10;verticalAlign=top;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="1230" y="790" width="150" height="85" as="geometry"/>
+        </mxCell>
+        
+        <!-- Finance GPML -->
+        <mxCell id="eu-fin-gpml-header" value="&lt;b&gt;Finance (GPML)&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D0E4F5;strokeColor=#4A90D9;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1400" y="760" width="150" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="eu-fin-gpml-box" value="Andrew Mang&lt;br&gt;Wong Ka Leung" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B8D4E8;strokeWidth=1;align=left;fontSize=10;spacingLeft=10;verticalAlign=top;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="1400" y="790" width="150" height="60" as="geometry"/>
+        </mxCell>
+        
+        <!-- Procurement -->
+        <mxCell id="eu-proc-header" value="&lt;b&gt;Procurement&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D0E4F5;strokeColor=#4A90D9;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1570" y="760" width="110" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="eu-proc-box" value="Ivy Cheung&lt;br&gt;Veronica Tung&lt;br&gt;Raymond Lam&lt;br&gt;Koey Chan" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B8D4E8;strokeWidth=1;align=left;fontSize=10;spacingLeft=10;verticalAlign=top;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="1570" y="790" width="110" height="110" as="geometry"/>
+        </mxCell>
+        
+        <!-- Additional sections in second row -->
+        <!-- Supplier Management -->
+        <mxCell id="eu-supplier-header" value="&lt;b&gt;Supplier Management&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D0E4F5;strokeColor=#4A90D9;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1060" y="865" width="150" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="eu-supplier-box" value="Michael Chart&lt;br&gt;Jess Liu&lt;br&gt;CY Chik&lt;br&gt;Julie Yu" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B8D4E8;strokeWidth=1;align=left;fontSize=10;spacingLeft=10;verticalAlign=top;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="1060" y="895" width="150" height="105" as="geometry"/>
+        </mxCell>
+        
+        <!-- Legend -->
+        <mxCell id="legend-title" value="&lt;b&gt;Legend:&lt;/b&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="100" y="1050" width="100" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="legend-exec" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1A4D7C;strokeColor=#0D2A4A;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="1075" width="30" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="legend-exec-text" value="Executive Level" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="135" y="1075" width="150" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="legend-gov" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#2C5F8D;strokeColor=#1A4D7C;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="1075" width="30" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="legend-gov-text" value="Governance &amp; Management" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="335" y="1075" width="180" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="legend-team" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#5B9BD5;strokeColor=#2C5F8D;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="530" y="1075" width="30" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="legend-team-text" value="Project Teams" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="565" y="1075" width="150" height="20" as="geometry"/>
+        </mxCell>
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
